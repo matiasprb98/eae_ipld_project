@@ -4,7 +4,7 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Matias Proaño Portfolio",
     page_icon="📊",
 )
 
@@ -15,16 +15,16 @@ with st.sidebar:
     st.header("Introduction to Programming Languages for Data")
     st.write("###")
     st.write("***Final Project - Dec 2023***")
-    st.write("**Author:** <Your Name>")
+    st.write("**Author:** Matias Proaño")
     st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
 # ----- Top title -----
-st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is ????</h1></div>""", unsafe_allow_html=True)  # TODO: Add your name
+st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Matias Proaño""", unsafe_allow_html=True)  
 
 
 # ----- Profile image file -----
-profile_image_file_path = "profile.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+profile_image_file_path = "profile.jpg"        
 
 with open(profile_image_file_path, "rb") as img_file:
     img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -39,7 +39,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+current_role = "Economist & Big Data Analytics Enthusiast"
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -51,19 +51,20 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies> 
+- 🧑‍💻 Economist with a specialisation in finance, graduate and on my way to a master's degree in Big Data & Analytics.My strong economic background and commitment to growth positions me to seize opportunities and bringanalytical freshness to new challenges..
+- 🛩️ prev: <I Led a B2B project selling customized vegetables to multiple hotels and restaurants in the city, my teamwork and I were able to reduce up to 13 percent of the costs, that includes the purchase of supplies and logistics services.
+I was able to develop an analysis of the competition by taking out theaverage prices that were on sale to the public in order to decide ourprices to go to market.
+I had the opportunity to solve inventory control problems with programmers from Israel for the correct function of the e
+commerce web site.>
+- ❤️ <football, music, trips, fitness>
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🤖 <Big data & analytics master's degree>
 
-- ❤️ <Your Passion and/or Interests>
+- 🏂 <Drums>
 
-- 🤖 <Your Personal Projects>
-
-- 🏂 <Your Hobbies>
-
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me: <proanomatias@gmail.com >
 
 - 🏠 Barcelona
 """)
 
-# Feel free to add other points like your Linkedin, Github, Social Media, etc.
+
